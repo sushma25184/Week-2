@@ -1,41 +1,66 @@
-Sustainability AQI Prediction
+🌱 Sustainability – Air Quality Index (AQI) Prediction
 
-This project predicts the Air Quality Index (AQI) using pollution data such as PM2.5, PM10, and CO levels.
+This project focuses on promoting environmental sustainability by predicting the Air Quality Index (AQI) using real-world pollution data.
+It uses key air pollutants such as PM2.5, PM10, NO₂, SO₂, O₃, and CO to determine the air quality category and provide actionable insights for public health awareness.
 
 🧠 Project Workflow
 
-Collected and cleaned air quality dataset (city_day.csv)
+Data Collection & Cleaning
 
-Visualized data trends and correlations using heatmaps and graphs
+Collected and prepared the air quality dataset (city_day.csv) from Kaggle.
 
-Built and trained a Linear Regression model
+Handled missing values and filtered essential pollutant features.
 
-Saved the model as aqi_prediction_model.pkl
+Exploratory Data Analysis (EDA)
 
-Predicted AQI values based on pollution levels
+Visualized data trends and relationships using heatmaps and statistical plots.
+
+Identified key pollutants most correlated with AQI.
+
+Model Development
+
+Implemented and compared models:
+
+Linear Regression (Baseline)
+
+Random Forest Regressor (Advanced)
+
+Tuned hyperparameters and improved accuracy using feature importance analysis.
+
+Model Evaluation & Saving
+
+Evaluated using Mean Squared Error (MSE) and R² Score.
+
+Saved trained models as aqi_prediction_model.pkl and aqi_prediction_model_v2.pkl for reuse.
+
+Prediction
+
+Model predicts AQI for given pollution levels and classifies air quality (e.g., Good, Moderate, Poor).
 
 📊 Technologies Used
 
 Python
 
-Pandas
+Pandas, NumPy
 
-Matplotlib
-
-Seaborn
+Matplotlib, Seaborn
 
 Scikit-learn
 
 Google Colab
 
-🏁 Result
+🏁 Results
 
-The model achieved R² = 0.90 and can predict AQI for given pollution values.
+Linear Regression Model: R² = 0.90
+
+Random Forest Model (Improved): R² = 0.94
+
+Demonstrated better predictive power and interpretability with pollutant-level feature importance.
 
 💾 Files Included
-
-sustainability_air_quality.ipynb – Notebook with full code
-
-city_day.csv – Dataset
-
-aqi_prediction_model.pkl – Trained model
+File Name	Description
+sustainability_air_quality.ipynb	Main Colab notebook with data cleaning, visualization, and model training code
+city_day.csv	Air quality dataset used for training
+aqi_prediction_model.pkl	Baseline trained model (Linear Regression)
+aqi_prediction_model_v2.pkl	Advanced trained model (Random Forest)
+README.md	Project summary and documentation
